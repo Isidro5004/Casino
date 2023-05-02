@@ -78,6 +78,17 @@ __play(num_rolls)__
 <br> Returns a list of random weighted faces with n-length determined by the user.
 <br>__show(form = 'W')__
 <br> Returns the most recent face and weight values as a dataframe.
+#### Attributes
+__dice__: die class object
+<br> die or dice created of equal length 
+__form__: string, optional
+<br> user defined value determines the dimensions of the returned private dataframe. 'N' will return a narrow dataframe while 'W' will return wide dataframe.
+
+### Analyzer Class
+
+#### Methods
+
+#### Attributes
 
 ## Manifest
 - LICENSE
