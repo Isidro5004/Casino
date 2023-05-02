@@ -44,8 +44,6 @@ __N__: array, dtype = numbers or strings
 <br>__W__: array, dtype = floats
 <br>      fl it defaults to 1.0.
 
-### Methods
-
 #### change weight
 Allows user to change weight on a given face from the default initialized value of 1.0.
 <br> __Parameters__
