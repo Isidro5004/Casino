@@ -29,7 +29,21 @@ jackpots = analysis.jackpot()
 
 ## API Description
 ### Die
-A die has N sides, or “faces”, and W weights, and can be rolled to select a face. To create a die/dice, create an array of face elements that can be either a numeric or string. Weights do not need to be input to run as it defaults to 1.0.
+A die has N sides, or “faces”, and W weights, and can be rolled to select a face. To create a die/dice, create an array of face elements that can be either a numeric or string. Weights do not need to be input to run as it defaults to 1.0. This class creates any discrete random variable associated with a stochastic process, such as using a deck of cards or flipping a coin or speaking a language.
+#### Methods
+change_weight(face,new_weight)
+<br>    Allows user to change weight on a given face from the default initialized value of 1.0. 
+<br>roll(num_rolls = 1)
+<br>    Returns a list of random weighted faces with n-length determined by the user.
+<br>show()
+<br>    returns the most recent face and weight values as a dataframe.
+        
+    Attributes:
+    ------------
+    N: array, dtype = numbers or strings
+        array of number or strings used to represent variable.
+    W: array, dtype = floats
+        fl it defaults to 1.0.
 
 #### change weight
 
