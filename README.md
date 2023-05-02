@@ -106,17 +106,16 @@ __jackpot()__
 <br> method to compute how many times a given face is rolled in each event.
         
 #### Attributes
-Attributes:
-    datatype: dtype
-        will ascertain the datatype of variables.
-    game: game class object
-        Game that will statistics will be derived from.
-    jackpott: dataframe
-        how many times a roll resulted in all faces being the same.
-    combodata: dataframe
-        how many combination types of faces were rolled and their counts  
-    facecountdata: datataframe
-        the number of times a given face appeared in each roll
+<br>__datatype__: dtype
+<br>will ascertain the datatype of variables.
+<br>__game__: game class object
+<br>Game that will statistics will be derived from.
+<br>__jackpott__: dataframe
+<br> how many times a roll resulted in all faces being the same.
+<br>__combodata__: dataframe
+<br>how many combination types of faces were rolled and their counts  
+<br>__facecountdata__: datataframe
+<br> the number of times a given face appeared in each roll
 
 
 ## Manifest
