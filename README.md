@@ -133,6 +133,7 @@ Method to compute how many times a given face is rolled in each event. Returns t
   - init.py
   - montecarlo.py
 * tests
+  - init.py
   - montecarlo_tests.py
 * montecarlo_results.txt
 * setup.py
