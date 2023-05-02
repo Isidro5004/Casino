@@ -36,13 +36,15 @@ __change_weight(face,new_weight)__
 <br>__roll(num_rolls = 1)__
 <br>    Returns a list of random weighted faces with n-length determined by the user.
 <br>__show()__
-<br>    returns the most recent face and weight values as a dataframe.
-        
+<br>    returns the most recent face and weight values as a dataframe.<br>__Returns__
+<br>The return will be a dataframe with the user defined faces and weights defaulted to 1.0.        
 #### Attributes
 __N__: array, dtype = numbers or strings
 <br>        array of number or strings used to represent variable.
 <br>__W__: array, dtype = floats
 <br>      fl it defaults to 1.0.
+
+### Methods
 
 #### change weight
 Allows user to change weight on a given face from the default initialized value of 1.0.
@@ -67,6 +69,15 @@ __Returns__
 
 
 ### Game Class
+A game consists of rolling of one or more dice of the same kind one or more times.
+
+#### Methods
+__play(num_rolls)__
+<br> Takes a parameter to specify how many times the dice should be rolled. Saves the result of the play to a private dataframe of shape N rolls by M dice. The private dataframe should have the roll number is a named index. This results in a table of data with columns for roll number, the die number (its list index), and the face rolled in that instance.
+<br>__roll(num_rolls = 1)__
+<br> Returns a list of random weighted faces with n-length determined by the user.
+<br>__show(form = 'W')__
+<br> Returns the most recent face and weight values as a dataframe.
 
 ## Manifest
 - LICENSE
