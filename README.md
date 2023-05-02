@@ -17,15 +17,19 @@ In preferred python workspace, use the from and import functions to bring in mod
 from casino import montecarlo 
 ```
 ### Code Example
-For this example, we will make a coin with faces 'H' (heads) and 'T' (Tails).
+For this example, we will make a coin with faces 'H' (heads) and 'T' (Tails). The Game class only requires one die to initialize, but for this example, we will pass five dice. Note that we can pass the same die multiple times. We will also play the game 1,000 times. Afterwards, we can analyize statistics of the game we played. Let's get the number of jackpots or number of times that all five dice have the same face.
 ```
-from casino import montecarlo
-die = Die(['H','T'])
+from casino import montecarlo as mc
+die = mc.Die(['H','T'])
+game = mc.Game([die,die,die,die,die])
+game.play(1000)
+analysis = mc.Analyzer([game])
+jackpots = analysis.jackpot()
 ```
 
 ## API Description
 ### Die
-A die has N sides, or “faces”, and W weights, and can be rolled to select a face. To create a die/dice, create an array of face elements that can be either a numeric or string. Weights do not need to be input to run as it defaults to 1.0. For this example, we will make a coin with faces 'H' (heads) and 'T' (Tails).
+A die has N sides, or “faces”, and W weights, and can be rolled to select a face. To create a die/dice, create an array of face elements that can be either a numeric or string. Weights do not need to be input to run as it defaults to 1.0.
 
 #### change weight
 
@@ -35,3 +39,5 @@ A die has N sides, or “faces”, and W weights, and can be rolled to select a 
 ```
 game = Game([die,die,die])
 ```
+
+## License 
