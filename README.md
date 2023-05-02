@@ -7,4 +7,6 @@ This includes a python library with a simple monte carlo simulator by Isidro Pri
 2. At the top right of the page, click Fork.
 3. Review the options and change to your liking.
 4. click create fork.
-5. 
+5. Run the following code in local command line:
+pip install git+<url>.git#egg=casino
+  
