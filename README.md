@@ -74,21 +74,34 @@ A game consists of rolling of one or more dice of the same kind one or more time
 #### Methods
 __play(num_rolls)__
 <br> Takes a parameter to specify how many times the dice should be rolled. Saves the result of the play to a private dataframe of shape N rolls by M dice. The private dataframe should have the roll number is a named index. This results in a table of data with columns for roll number, the die number (its list index), and the face rolled in that instance.
-<br>__roll(num_rolls = 1)__
-<br> Returns a list of random weighted faces with n-length determined by the user.
 <br>__show(form = 'W')__
 <br> Returns the most recent face and weight values as a dataframe.
 #### Attributes
 __dice__: die class object
 <br> die or dice created of equal length 
-__form__: string, optional
+<br>__form__: string, optional
 <br> user defined value determines the dimensions of the returned private dataframe. 'N' will return a narrow dataframe while 'W' will return wide dataframe.
 
+#### play
+Takes a parameter to specify how many times the dice should be rolled. Saves the result of the play to a private dataframe of shape N rolls by M dice. The private dataframe should have the roll number is a named index. This results in a table of data with columns for roll number, the die number (its list index), and the face rolled in that instance.
+<br>__Parameters__
+<br>__num_rolls__: numeric
+<br>Number of times that die/dice should be rolled.
+
+##### show 
+This method just passes the private dataframe to the user.
+<br>__Paramaters__:
+<br> __form__: string, optional
+<br>User defined value determines the dimensions of the returned private dataframe. 'N' will return a narrow dataframe  while 'W' will return wide dataframe. 
+
 ### Analyzer Class
+An analyzer takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
 
 #### Methods
 
 #### Attributes
+
+
 
 ## Manifest
 - LICENSE
