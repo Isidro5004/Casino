@@ -1,2 +1,6 @@
 # Monte-Carlo-Project
-Python Package that include monte carlo simulator
+This includes a python library with a simple monte carlo simulator.
+Author: Isidro Pride
+
+# Installation and Usage
+
