@@ -69,16 +69,16 @@ __Returns__
 ### Game Class
 
 ## Manifest
-*LICENSE
-*README
-*casino
--init.py
--montecarlo.py
-*tests
--montecarlo_tests.py
-*montecarlo_results.txt
-*setup.py
-*monte.ipnyb
+- LICENSE
++ README
+* casino
+  - init.py
+  - montecarlo.py
+* tests
+  - montecarlo_tests.py
+* montecarlo_results.txt
+* setup.py
+* monte.ipnyb
 
 ## License 
 MIT License
