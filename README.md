@@ -14,7 +14,7 @@ $pip install git+<url>.git#egg=casino
 ## Using it
 In preferred python workspace, use the from and import functions to bring in module(s)
 ```python
-from casino import montecarlo 
+from casino import montecarlo as mc
 ```
 ### Code Example
 For this example, we will make a coin with faces 'H' (heads) and 'T' (Tails). The Game class only requires one die to initialize, but for this example, we will pass five dice. Note that we can pass the same die multiple times. We will also play the game 1,000 times. Afterwards, we can analyize statistics of the game we played. Let's get the number of jackpots or number of times that all five dice have the same face.
@@ -30,6 +30,10 @@ jackpots = analysis.jackpot()
 ## API Description
 ### Die Class
 A die has N sides, or “faces”, and W weights, and can be rolled to select a face. To create a die/dice, create an array of face elements that can be either a numeric or string. Weights do not need to be input to run as it defaults to 1.0. This class creates any discrete random variable associated with a stochastic process, such as using a deck of cards or flipping a coin or speaking a language.
+<br>view docstring:
+```python
+mc.Die.__doc__
+```
 #### Methods
 __change_weight(face,new_weight)__
 <br>    Allows user to change weight on a given face from the default initialized value of 1.0. 
@@ -37,7 +41,8 @@ __change_weight(face,new_weight)__
 <br>    Returns a list of random weighted faces with n-length determined by the user.
 <br>__show()__
 <br>    returns the most recent face and weight values as a dataframe.<br>__Returns__
-<br>The return will be a dataframe with the user defined faces and weights defaulted to 1.0.        
+<br>The return will be a dataframe with the user defined faces and weights defaulted to 1.0. 
+
 #### Attributes
 __N__: array, dtype = numbers or strings
 <br>        array of number or strings used to represent variable.
@@ -68,7 +73,10 @@ __Returns__
 
 ### Game Class
 A game consists of rolling of one or more dice of the same kind one or more times.
-
+<br>view docstring:
+```python
+mc.Game.__doc__
+```
 #### Methods
 __play(num_rolls)__
 <br> Takes a parameter to specify how many times the dice should be rolled. Saves the result of the play to a private dataframe of shape N rolls by M dice. The private dataframe should have the roll number is a named index. This results in a table of data with columns for roll number, the die number (its list index), and the face rolled in that instance.
@@ -94,7 +102,10 @@ This method just passes the private dataframe to the user.
 
 ### Analyzer Class
 An analyzer takes the results of a single game and computes various descriptive statistical properties about it. These properties results are available as attributes of an Analyzer object.
-
+<br>view docstring:
+```python
+mc.Analyzer.__doc__
+```
 #### Methods
 __jackpot()__
 <br>method to compute how many times the game resulted in all faces being identical.  
