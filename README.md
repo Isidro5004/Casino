@@ -88,7 +88,7 @@ Takes a parameter to specify how many times the dice should be rolled. Saves the
 <br>__num_rolls__: numeric
 <br>Number of times that die/dice should be rolled.
 
-##### show 
+#### show 
 This method just passes the private dataframe to the user.
 <br>__Paramaters__:
 <br> __form__: string, optional
@@ -117,6 +117,14 @@ __jackpot()__
 <br>__facecountdata__: datataframe
 <br> the number of times a given face appeared in each roll
 
+#### jackpot
+Method to compute how many times the game resulted in all faces being identical. returns an integer count of times all faces were identical.
+
+#### combo
+Method to compute the distinct combinations of faces rolled, along with their counts. Returns dataframe of these values.
+
+#### face count
+Method to compute how many times a given face is rolled in each event. Returns these values as dataframe.
 
 ## Manifest
 - LICENSE
