@@ -38,12 +38,11 @@ change_weight(face,new_weight)
 <br>show()
 <br>    returns the most recent face and weight values as a dataframe.
         
-    Attributes:
-    ------------
-    N: array, dtype = numbers or strings
-        array of number or strings used to represent variable.
-    W: array, dtype = floats
-        fl it defaults to 1.0.
+#### Attributes
+N: array, dtype = numbers or strings
+<br>        array of number or strings used to represent variable.
+<br>W: array, dtype = floats
+<br>      fl it defaults to 1.0.
 
 #### change weight
 
